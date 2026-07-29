@@ -1,0 +1,43 @@
+# Focussing (FocusSync Dock V3.0)
+
+## Integrantes
+- David Alejandro Pava Vargas
+- Yohan Sanchez
+- Hernan Corredor
+
+## Descripción / Introducción
+Focussing es un sistema ciberfísico (dock físico) para la gestión adaptativa del enfoque y la
+ergonomía en entornos de trabajo. A diferencia de los métodos tradicionales de temporización
+fija (técnica Pomodoro) y de los sensores infrarrojos pasivos (PIR) —que fallan al detectar
+usuarios inmóviles durante tareas de alta concentración—, Focussing integra un radar de
+ondas milimétricas de 24 GHz (LD2410B) capaz de censar presencia incluso en estado
+estacionario.
+
+El dispositivo calcula un indicador llamado **Focus Score**, que pondera el tiempo continuo
+de trabajo, la presencia física real, el tipo de aplicación activa en el computador y el nivel de
+luz ambiental (BH1750). Como retroalimentación usa una pantalla OLED, un anillo de LEDs
+NeoPixel, un actuador háptico, un buzzer y un servomotor que bloquea físicamente el celular
+del usuario mientras trabaja.
+
+El sistema está compuesto por tres capas: un agente en el PC (Python + psutil) que clasifica
+la actividad del usuario, el dock físico basado en ESP32 (MicroPython) que centraliza el
+procesamiento, y una app móvil (BLE, planeada) como panel de control.
+
+## Palabras clave
+Sistema ciberfísico, ESP32, radar mmWave, MicroPython, PCB, KiCad, Focus Score
+
+## Poster / Brochure
+<!-- Inserta aquí la imagen de tu poster o brochure -->
+
+## Banner del resultado final
+<!-- Inserta aquí una foto tipo banner del dock terminado -->
+
+## Video del proyecto
+!?[Focussing - Video del proyecto](URL-de-YouTube)
+
+El video debe explicar:
+- La problemática (fallas de Pomodoro y sensores PIR)
+- La solución planteada (radar mmWave + Focus Score + bloqueo físico de celular)
+- El criterio para las decisiones tomadas (por qué LD2410B en vez de PIR, etc.)
+- El funcionamiento desde el punto de vista del usuario
+- Recomendaciones y conclusiones
